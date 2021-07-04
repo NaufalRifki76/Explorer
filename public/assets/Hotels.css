@@ -139,13 +139,21 @@ main{
     
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7vh;
-    background-color: #3087a1;
-    color: white;
-    margin: 0px;
-}
+    .footer{
+        background-color: #3087a1;
+        opacity: 59%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        }
 
+        .footer a{
+            color: white;
+            font-weight: bold;
+        }
+
+        .footcontent{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
