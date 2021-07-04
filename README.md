@@ -1,5 +1,5 @@
 # Explorer
-![Explorer Logo](https://ibb.co/Ssb9FLs)
+![Explorer Logo](https://i.ibb.co/j6m1np6/Explorer.png)
 This is created for the TechnoScape BNCC Hackathon
 
 Our Team is Mari Kita Coba! which consists of :
