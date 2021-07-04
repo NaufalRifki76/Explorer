@@ -24,12 +24,15 @@ app.use(session({
 }))
 app.use(passport.initialize())
 app.use(passport.session())
-
+app.use('/public', express.static('public'));
 app.get('/login',(req,res) =>{
     res.render('login.ejs');
 })
+app.get('/Hotels',(req,res) =>{
+    res.render('Hotels.ejs');
+})
 app.post('/login',passport.authenticate('local', {
-    successRedirect :'/',
+    successRedirect :'/Hotels',
     failureRedirect:'/login'
 }))
 app.get('/register',(req,res) =>{
