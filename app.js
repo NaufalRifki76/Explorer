@@ -31,6 +31,12 @@ app.get('/login',(req,res) =>{
 app.get('/Hotels',(req,res) =>{
     res.render('Hotels.ejs');
 })
+app.get('/Bus',(req,res) =>{
+    res.render('Bus.ejs');
+})
+app.get('/payment',(req,res) =>{
+    res.render('payment.ejs');
+})
 app.post('/login',passport.authenticate('local', {
     successRedirect :'/Hotels',
     failureRedirect:'/login'
