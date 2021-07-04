@@ -1,22 +1,92 @@
-<h1>Sign In</h1>
-<form action="/register" method="POST">
-    <div>
-        <label for="name">Name</label>
-        <input type="type" id="name" name="name" required>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/public/assets/register.css">
+</head>
+<body>
+    <div class="header">
+        <div class="hleft">
+            Explorer
+        </div>
+        <div class="hright">
+            <a href="">Hotels</a>
+            <a href="">Transport</a>
+            <a href="">About Us</a>
+            <div class="signup">
+                <a href="../html/login.html">Sign Up</a>
+            </div>
+        </div>
     </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+    <form action="/register" method="POST">
+        <div class="body">
+            <div class="title">
+                Sign Up
+            </div>
+            <div class="name">
+                <div class="text">
+                    Username
+                </div>
+                <div class="component">
+                    <input type="type" id="name" name="name" required>
+                </div>
+            </div>
+    
+            <div class="email">
+                <div class="text">
+                    Email
+                </div>
+                <div class="component">
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+            </div>
+    
+            <div class="pass">
+                <div class="text">
+                    Password
+                </div>
+                <div class="component">
+                    <input type="password" id="password" name="password" required >
+                </div>
+            </div>
+    
+            <div class="pass2">
+                <div class="text">
+                    Confirm Password
+                </div>
+                <div class="component">
+                    <input type="password" id="confirm" name="confirm" required>
+                </div>
+            </div>
+    
+            <div class="submit">
+                <a href="">
+                    <button type="submit" >Register</button>
+                </a>
+            </div>
+    
+            <div class="ask">
+                <di class="or">
+                    or
+                </div>
+                <div class="login">
+                    Already have an account? 
+                    <a href="/login">Login</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <div class="footer">
+        <div class="footcontent">
+                <a href="">Privacy Policy</a>
+                <a href="">Contact Us</a>
+                <a href="">Copyright @2021</a>
+            </div>
     </div>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" id="passowrd" name="password" required>
-    </div>
-    <div>
-        <label for="confirm">Confirm Password</label>
-        <input type="password" id="confirm" name="confirm" required>
-        
-    </div>
-    <button type="submit">Sign Up!</button>
-    <a href="/login">Already Signed up? Log in Here!</a>
-</form>
+</body>
+</html>
